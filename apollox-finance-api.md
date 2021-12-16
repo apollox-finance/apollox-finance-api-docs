@@ -67,6 +67,8 @@
 - [Account/Trades Endpoints](#accounttrades-endpoints)
 	- [Change Position Mode(TRADE)](#change-position-modetrade)
 	- [Get Current Position Mode(USER_DATA)](#get-current-position-modeuser_data)
+	- [Change Multi-Assets Mode (TRADE)](#change-multi-assets-mode-trade)
+	- [Get Current Multi-Assets Mode (USER_DATA)](#get-current-multi-assets-mode-user_data)
 	- [New Order  (TRADE)](#new-order--trade)
 	- [Place Multiple Orders  (TRADE)](#place-multiple-orders--trade)
 	- [Query Order (USER_DATA)](#query-order-user_data)
@@ -2172,6 +2174,62 @@ Name | Type | Mandatory | Description
 recvWindow | LONG   | NO       |
 timestamp  | LONG   | YES      |
 
+
+## Change Multi-Assets Mode (TRADE)
+
+> **Response:**
+
+```javascript
+{
+	"code": 200,
+	"msg": "success"
+}
+```
+
+``
+POST /fapi/v1/multiAssetsMargin (HMAC SHA256)
+``
+
+Change user's Multi-Assets mode (Multi-Assets Mode or Single-Asset Mode) on ***Every symbol***
+
+**Weight:**
+1
+
+**Parameters:**
+
+Name | Type | Mandatory | Description
+---------- | ------ | -------- | -----------------
+multiAssetsMargin | STRING   | YES      | "true": Multi-Assets Mode; "false": Single-Asset Mode
+recvWindow | LONG   | NO       |
+timestamp  | LONG   | YES      |
+
+
+
+## Get Current Multi-Assets Mode (USER_DATA)
+
+> **Response:**
+
+```javascript
+{
+	"multiAssetsMargin": true // "true": Multi-Assets Mode; "false": Single-Asset Mode
+}
+```
+
+``
+GET /fapi/v1/multiAssetsMargin (HMAC SHA256)
+``
+
+Get user's Multi-Assets mode (Multi-Assets Mode or Single-Asset Mode) on ***Every symbol***    
+
+**Weight:**
+30
+
+**Parameters:**
+
+Name | Type | Mandatory | Description
+---------- | ------ | -------- | -----------------
+recvWindow | LONG   | NO       |
+timestamp  | LONG   | YES      |
 
 
 ## New Order  (TRADE)

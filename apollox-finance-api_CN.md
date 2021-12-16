@@ -66,6 +66,8 @@
 - [账户和交易接口](#账户和交易接口)
 	- [更改持仓模式(TRADE)](#更改持仓模式trade)
 	- [查询持仓模式(USER_DATA)](#查询持仓模式user_data)
+	- [更改联合保证金模式(TRADE)](#更改联合保证金模式trade)
+	- [查询联合保证金模式(USER_DATA)](#查询联合保证金模式user_data)
 	- [下单 (TRADE)](#下单-trade)
 	- [测试下单接口 (TRADE)](#测试下单接口-trade)
 	- [批量下单 (TRADE)](#批量下单-trade)
@@ -2056,6 +2058,61 @@ recvWindow | LONG   | NO       |
 timestamp  | LONG   | YES      |
 
 
+## 更改联合保证金模式(TRADE)
+
+> **响应:**
+
+```javascript
+{
+	"code": 200,
+	"msg": "success"
+}
+```
+
+``
+POST /fapi/v1/multiAssetsMargin (HMAC SHA256)
+``
+
+变换用户在 ***所有symbol*** 合约上的联合保证金模式：开启或关闭联合保证金模式。   
+
+**权重:**
+1
+
+**参数:**
+
+   名称    |  类型  | 是否必需 |       描述
+---------- | ------ | -------- | -----------------
+multiAssetsMargin | STRING   | YES      | "true": 联合保证金模式开启；"false": 联合保证金模式关闭
+recvWindow | LONG   | NO       |
+timestamp  | LONG   | YES      |
+
+
+
+## 查询联合保证金模式(USER_DATA)
+
+> **响应:**
+
+```javascript
+{
+	"multiAssetsMargin": true // "true": 联合保证金模式开启；"false": 联合保证金模式关闭
+}
+```
+
+``
+GET /fapi/v1/multiAssetsMargin (HMAC SHA256)
+``
+
+查询用户目前在 ***所有symbol*** 合约上的联合保证金模式。      
+
+**权重:**
+30
+
+**参数:**
+
+   名称    |  类型  | 是否必需 |       描述
+---------- | ------ | -------- | -----------------
+recvWindow | LONG   | NO       |
+timestamp  | LONG   | YES      |
 
 
 ## 下单 (TRADE)
