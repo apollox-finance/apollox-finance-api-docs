@@ -3314,7 +3314,7 @@ GET /fapi/v1/income (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | NO|
-incomeType | STRING | NO | "TRANSFER"，"WELCOME_BONUS", "REALIZED_PNL"，"FUNDING_FEE", "COMMISSION" and "INSURANCE_CLEAR" 
+incomeType | STRING | NO | "TRANSFER"，"WELCOME_BONUS", "REALIZED_PNL"，"FUNDING_FEE", "COMMISSION", "INSURANCE_CLEAR", and "MARKET_MERCHANT_RETURN_REWARD"
 startTime | LONG | NO | Timestamp in ms to get funding from INCLUSIVE.
 endTime | LONG | NO | Timestamp in ms to get funding until INCLUSIVE.
 limit | INT | NO | Default 100; max 1000

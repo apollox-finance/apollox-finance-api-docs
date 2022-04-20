@@ -3203,7 +3203,7 @@ GET /fapi/v1/income (HMAC SHA256)
    名称    |  类型  | 是否必需 |                                              描述
 ---------- | ------ | -------- | -----------------------------------------------------------------------------------------------
 symbol     | STRING | NO       | 交易对
-incomeType | STRING | NO       | 收益类型 "TRANSFER"，"WELCOME_BONUS", "REALIZED_PNL"，"FUNDING_FEE", "COMMISSION", and "INSURANCE_CLEAR"
+incomeType | STRING | NO       | 收益类型 "TRANSFER"，"WELCOME_BONUS", "REALIZED_PNL"，"FUNDING_FEE", "COMMISSION", "INSURANCE_CLEAR", and "MARKET_MERCHANT_RETURN_REWARD"
 startTime  | LONG   | NO       | 起始时间
 endTime    | LONG   | NO       | 结束时间
 limit      | INT    | NO       | 返回的结果集数量 默认值:100 最大值:1000
