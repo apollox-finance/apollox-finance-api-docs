@@ -3393,7 +3393,7 @@ GET /fapi/v1/forceOrders
 
 **参数:**
 
-    名称      |  类型  | 是否必需 |                   描述
+  名称      |  类型  | 是否必需 |                   描述
 ------------- | ------ | -------- | ----------------------------------------
 symbol        | STRING | NO       |
 autoCloseType | ENUM   | NO       | "LIQUIDATION": 强平单, "ADL": ADL减仓单.

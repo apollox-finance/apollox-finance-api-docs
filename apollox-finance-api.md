@@ -3508,7 +3508,7 @@ GET /fapi/v1/forceOrders
 
 **Parameters:**
 
-    Name      |  Type  | Mandatory |                         Description
+  Name      |  Type  | Mandatory |                         Description
 ------------- | ------ | --------- | -----------------------------------------------------------
 symbol        | STRING | NO        |
 autoCloseType | ENUM   | NO        | "LIQUIDATION" for liquidation orders, "ADL" for ADL orders.
