@@ -1,15 +1,15 @@
-# API Documentation for APX Finance
+# API Documentation for apollox Finance
 
-[APX Finance API Document](./APX-finance-api.md)
+[apollox Finance API Document](./apolox-finance-api.md)
 
-# APX Finance API 文档
+# apollox Finance API 文档
 
-[APX Finance API 文档](./APX-finance-api_CN.md)
+[apollox Finance API 文档](./apollox-finance-api_CN.md)
 
-# API Documentation for APX Finance Spot
+# API Documentation for apollox Finance Spot
 
-[APX Finance Spot API Document](./APX-finance-spot-api.md)
+[apollox Finance Spot API Document](./apollox-finance-spot-api.md)
 
-# APX Finance 现货 API 文档
+# apollox Finance 现货 API 文档
 
-[APX Finance 现货 API 文档](./APX-finance-spot-api_CN.md)
+[apollox Finance 现货 API 文档](./apollox-finance-spot-api_CN.md)
